@@ -1,24 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
 
+
+import './App.css';
+import { CapitalCities } from './Componentes/CapitalCities';
+import { FlagQuestions } from './Componentes/Flags';
+import { PeriodicQuestions } from './Componentes/PeriodicTable';
 function App() {
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <section>
+      <FlagQuestions/>
+      <PeriodicQuestions/>
+      <CapitalCities/>
+    </section>
   );
 }
 
